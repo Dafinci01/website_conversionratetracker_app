@@ -16,7 +16,7 @@ The Advanced Website Traffic Monitoring System is a powerful, real-time analytic
 - **Scalable Cloud Deployment**: Utilize AWS services for scalability and efficiency.  
 
 ## Technologies Used  
-- **Backend**: FastAPI, Redis, PostgreSQL (or any database of your choice)  
+- **Backend**: FastAPI, Redis 
 - **Real-Time Tracking**: WebSockets  
 - **AI/ML**: scikit-learn, TensorFlow  
 - **Data Visualization**: Plotly, D3.js  
