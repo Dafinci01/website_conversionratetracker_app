@@ -1,7 +1,7 @@
  Website Traffic Monitoring System  
 
 ## Overview  
-The Advanced Website Traffic Monitoring System is a powerful, real-time analytics tool designed to track and analyze user behavior on websites. This project goes beyond traditional traffic monitoring by integrating AI-powered insights, stealth tracking capabilities, and a scalable cloud setup to deliver unique and actionable data.  
+Thi is Basic website Traffic monitoring system that can be modified inot an Advanced Website Traffic Monitoring System a powerful, real-time analytics tool designed to track and analyze user behavior on websites. This project goes beyond traditional traffic monitoring by integrating AI-powered insights, stealth tracking capabilities, and a scalable cloud setup to deliver unique and actionable data.  
 
 ## Features  
 - **Real-Time Tracking**: Live stats of users visiting your site using FastAPI WebSockets.  
