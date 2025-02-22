@@ -65,7 +65,7 @@ def get_integration_json(request: Request):
                 {"label": "interval", "type": "text", "required": True, "default": "* * * * *"}
             ],
             "target_url": "",
-            "tick_url": f"{base_url}/tick"
+            "tick_url":"https://ping.telex.im/v1/webhooks/01951ca7-a0cf-78b8-8218-4df86c56da46"
         }
     }
 
