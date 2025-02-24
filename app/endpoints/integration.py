@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Request
 
 
-
 #Create a router for the /integration,json endpoint
 
 
@@ -23,16 +22,16 @@ async def get__integration_json(request: Request):
             },
             "is_active": True,
             "integration_type": "interval",
-            "key_features": ["- Data Analytics"],
-            "integration_category": "Data Analytics & Visualization",
             "author": "David Odelana",
         
             "settings": [
-                {"label": "site-1", "type": "text", "required": True, "default": ""},
-                {"label": "site-2", "type": "text", "required": True, "default": ""},
-                {"label": "target_url", "type": "text", "required": True, "default": ""},
-                {"label": "interval", "type": "text", "required": True, "default": "* * * * *"}
+                {
+                    "label":"interval",
+                    "type":"text",
+                    "required": True,
+                    "default":"0 * * * *"
+                }
             ],
-            "tick_url":"https://ping.telex.im/v1/webhooks/0195326e-b2df-79b7-99bb-c07e4aabd362"
+            "tick_url":f"{base_url}/tick"
         }
     }

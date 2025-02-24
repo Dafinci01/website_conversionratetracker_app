@@ -2,7 +2,7 @@ from app.storage.memory import get_events
 
 
 
-def calculate_conversion_rate():
+async def calculate_conversion_rate():
     events = get_events()
     total_visits = len(events["visits"])
     total_conversions = len(events["conversions"])
