@@ -1,48 +1,59 @@
 from fastapi import APIRouter, Request
-from fastapi.responses import FileResponse  # For serving files
+from fastapi.responses import FileResponse 
 
 
-#Create a router for the /integration,json endpoint
 
-
-router = APIRouter()
-
-#define the /integration.json endpoint 
-@router.get("/integration.json")
-async def get__integration_json(request: Request):
-    base_url = str(request.base_url).rstrip("/")
-    return {
-        "data": {
-            "date": {"created_at": "2025-02-20", "updated_at": "2025-02-20"},
-            "descriptions": {
-                "app_name": "Website Conversion Tracker",
-                "app_description": "Tracks website conversion events and reports conversion rates",
-                "app_logo": "https://iili.io/3H9ICmb.jpg",
-                "app_url": base_url,
-                "background_color": "#fff",
-            },
-            "is_active": True,
-            "integration_category": "Marketing Automation",
-            "integration_type": "interval",
-            "key_features":[
-                "Tracks conversions(purchases, sign-ups, clicks)",
-                "Analyzes traffic  sources and users behaviour",
-                "Supports real-time reporting and alerts",
-                "Integrates with analytics abd marketing tools",
-                "Works across devices and platforms",
-                "Ensures CDPR and privacy compliance",
-                "Enables  A/B testing for optimization"
-            ],
-            "author": "David Odelana",
-        
-            "settings": [
-                {
-                    "label":"interval",
-                    "type":"text",
-                    "required": True,
-                    "default":"0 * * * *"
-                }
-            ],
-            "tick_url":f"{base_url}/tick",
-        }
-    }
+{
+  "data": {
+    "descriptions": {
+      "app_name": "Website Conversion Tracker",
+      "app_description": "Monitors user interactions and conversions on websites, providing real-time analytics and insights.",
+      "app_url": "https://website-conversionratetracker-app.onrender.com",
+      "app_logo": "https://website-conversionratetracker-app.onrender.com"/static/logo.png",
+      "background_color": "#f5f5f5"
+    },
+    "integration_type": "interval",
+    "integration_category": "Data Analytics & Visualization",
+    "key_features": [
+      "Tracks user actions like clicks, form submissions, and purchases",
+      "Provides real-time conversion analytics",
+      "Integrates with CRM and marketing tools",
+      "Supports custom conversion events",
+      "Generates reports and insights"
+    ],
+    "settings": [
+      {
+        "label": "Website URL",
+        "type": "text",
+        "required": True,
+        "default": "https://example.com"
+      },
+      {
+        "label": "Tracking ID",
+        "type": "text",
+        "required": True,
+        "default": "CONV-123456"
+      },
+      {
+        "label": "Conversion Event",
+        "type": "text",
+        "required": True,
+        "default": "purchase"
+      },
+      {
+        "label": "Notification Email",
+        "type": "email",
+        "required": False,
+        "default": "admin@example.com"
+      },
+      {
+        "label": "Interval",
+        "type": "text",
+        "required": True,
+        "default": "*/5 * * * *"
+      }
+    ],
+   "tick_url": "https://website-conversionratetracker-app.onrender.com/tick",
+   "target_url": "https://website-conversionratetracker-app.onrender.com/track"
+  }
+}
