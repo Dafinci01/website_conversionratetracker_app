@@ -13,7 +13,7 @@ class Event(BaseModel):
 class Setting(BaseModel):
     label: str #name of the setting 
     type: str # wtype of setting  eg text 
-    required: True
+    required: bool
     default: str
 
 #define the structurew of the payload sent by telex

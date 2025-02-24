@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse  # For serving files
 #Create a router for the /integration,json endpoint
 
 
-router = APIRouter
+router = APIRouter()
 
 #define the /integration.json endpoint 
 @router.get("/integration.json")

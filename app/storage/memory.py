@@ -12,4 +12,4 @@ def log_event(event: dict):
 
 # Retrive all logged events 
 def get_events():
-    return events
+    return {"visits": [], "conversions": []} 
