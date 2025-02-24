@@ -36,4 +36,4 @@ def read_root():
 @app.get("/logo")
 def get_logo():
     # Return the logo file (replace "path/to/logo.png" with the actual path)
-    return FileResponse("path/to/logo.png", media_type="image/png")
+    return FileResponse("static/data_analytics.png", media_type="image/png")
