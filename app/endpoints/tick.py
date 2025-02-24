@@ -10,7 +10,7 @@ async def tick(payload: ConversionPayload, background_tasks: BackgroundTasks):
     background_tasks.add_task(send_report, payload.return_url)
     return {"status": "accepted"}
 
-async def send_report(return_url: str):
+async def send_report(target_url: str):
     # ✅ Use `await` to call the async function
     rate, visits, conversions =  calculate_conversion_rate()
     message = f"Conversion Rate: {rate:.2f}% ({conversions}/{visits})"

@@ -19,5 +19,5 @@ class Setting(BaseModel):
 #define the structurew of the payload sent by telex
 class ConversionPayload(BaseModel):
     channel_id: str # id of the telex channel 
-    return_url: str # url to send results back to telex 
+    target_url: str # url to send results back to telex 
     settings: List[Setting] # list of settings eg interval 

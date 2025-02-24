@@ -43,6 +43,6 @@ async def get__integration_json(request: Request):
                     "default":"0 * * * *"
                 }
             ],
-            "tick_url":f"{base_url}/tick"
+            "tick_url":f"{base_url}/tick",
         }
     }
