@@ -9,8 +9,8 @@ from fastapi.responses import FileResponse
       "app_name": "Website Conversion Tracker",
       "app_description": "Monitors user interactions and conversions on websites, providing real-time analytics and insights.",
       "app_url": "https://website-conversionratetracker-app.onrender.com",
-      "app_logo": "https://website-conversionratetracker-app.onrender.com"/static/logo.png",
-      "background_color": "#f5f5f5"
+      "app_logo": "https://website-conversionratetracker-app.onrender.com/static/logo.png",
+      "background_color":  "#fff",
     },
     "integration_type": "interval",
     "integration_category": "Data Analytics & Visualization",
