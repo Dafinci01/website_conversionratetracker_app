@@ -33,7 +33,7 @@ from fastapi.responses import FileResponse
         "default": "website_conversionratetracker_app"
       }
     ],
-    "target_url": "https://website-conversionratetracker-app.onrender.com/integration.json/tick",
+    "target_url": "https://website-conversionratetracker-app.onrender.com/integration.json/target",
     "tick_url": "https://website-conversionratetracker-app.onrender.com/integration.json/tick"
   }
 }
