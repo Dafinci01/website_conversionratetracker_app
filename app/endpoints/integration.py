@@ -23,6 +23,15 @@ async def get__integration_json(request: Request):
             },
             "is_active": True,
             "integration_type": "interval",
+            "key_features":[
+                "Tracks conversions(purchases, sign-ups, clicks)",
+                "Analyzes traffic  sources and users behaviour",
+                "Supports real-time reporting and alerts",
+                "Integrates with analytics abd marketing tools",
+                "Works across devices and platforms",
+                "Ensures CDPR and privacy compliance",
+                "Enables  A/B testing for optimization"
+            ],
             "author": "David Odelana",
         
             "settings": [
