@@ -23,7 +23,7 @@ async def get__integration_json(request: Request):
             },
             "is_active": True,
             "integration_type": "interval",
-            "integration_category": "Marketing Automation"
+            "integration_category": "Marketing Automation",
             "key_features":[
                 "Tracks conversions(purchases, sign-ups, clicks)",
                 "Analyzes traffic  sources and users behaviour",
