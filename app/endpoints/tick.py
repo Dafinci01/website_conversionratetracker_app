@@ -23,4 +23,4 @@ async def send_report(target_url: str):
         "status": "info"
     }
     async with httpx.AsyncClient() as client:
-        await client.post(return_url, json=data)
+        await client.post(target_url, json=data)
