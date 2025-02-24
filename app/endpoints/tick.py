@@ -17,7 +17,7 @@ async def send_report(return_url: str):
     #foramt for telex
     data = {
         "message": message,
-        "username":"Conversion Tracker"
+        "username":"Conversion Tracker",
         "event_name": "Hourly Report",
         "status": "info"
     }
