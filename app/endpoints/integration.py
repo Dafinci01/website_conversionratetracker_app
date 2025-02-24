@@ -15,7 +15,7 @@ from fastapi.responses import FileResponse
       "app_url": "https://website-conversionratetracker-app.onrender.com/",
       "background_color": "#fff"
     },
-    "is_active": true,
+    "is_active": True,
     "integration_type": "interval",
     "integration_category": "Data Analytics & Visualization",
     "key_features": [
