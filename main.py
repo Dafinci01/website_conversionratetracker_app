@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.endpoints import integration, tick, log_event
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse  # For serving files 
+from fastapi.staticfiles import  StaticFiles  # For serving files 
 
 
 #initialize fast api app
