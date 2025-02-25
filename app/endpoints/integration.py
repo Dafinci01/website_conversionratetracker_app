@@ -16,7 +16,7 @@ async def get_integration_json(request: Request):
             "descriptions": {
                 "app_name": "website-conversionratetracker-app",
                 "app_description": "Data Analytics & Visualization",
-                "app_logo": "https://website-conversionratetracker-app.onrender.com/static/logo.png",
+                "app_logo": "https://website-conversionratetracker-app.onrender.com/static/data_analytics.png",
                 "app_url": "https://website-conversionratetracker-app.onrender.com/",
                 "background_color": "#fff"
             },
