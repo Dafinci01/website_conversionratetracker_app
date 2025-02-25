@@ -27,7 +27,8 @@ async def get_integration_json(request: Request):
                 "Tracks user actions like clicks",
                 "form submissions",
                 "and purchases",
-                "v"
+                "Detailed analytics on visitor behavior",
+                "Multi-device tracking"
             ],
             "author": "Davidodelana",
             "settings": [
