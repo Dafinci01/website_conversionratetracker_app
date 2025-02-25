@@ -30,10 +30,9 @@ app.include_router(log_event.router)
 #Root endpoin to check ehther app is running 
 @app.get("/")
 def read_root():
-    return{"message": "Conversion Tracker is running!"}
+    return{"message": "Your Website Conversion Tracker is running!"}
 # Endpoint to serve a logo file
 
-@app.get("/logo")
-def get_logo():
-    # Return the logo file (replace "path/to/logo.png" with the actual path)
-    return FileResponse("static/data_analytics.png", media_type="image/png")
+# Mount the static directory to serve static files (e.g., images, CSS, etc.)
+app.mount("/static", StaticFiles(directory="static"), name="static")
+

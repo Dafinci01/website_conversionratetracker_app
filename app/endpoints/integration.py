@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse  # Using JSONResponse to return JSON 
 
 router = APIRouter()
 
-@router.get("/integration.json")
+@router.get("/integration")
 async def get_integration_json(request: Request):
     base_url = str(request.base_url).rstrip("/")  # Fixed incorrect return statement
 
